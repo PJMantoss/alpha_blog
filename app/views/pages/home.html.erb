@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1559377240-b8e6053b6544?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed
+        }
+
+        h1 {
+            text-align: center
+        }
+
+        p {
+            text-align: center
+        }
+
+        .center {
+            margin: auto;
+            width: 40%;
+            padding: 2%
+        }
+
+        
+        table, th {
+            text-decoration-color: bisque
+        }
+
+        footer {
+            margin: auto;
+            width: 7%;
+            padding: 2%;
+            color: white
+        }
+    </style>
+<title>Home Page</title>
+</head>
+<body>
+
+<h1>Hello! I'm PJ Mantoss, a Ruby-on-Rails Developer</h1>
+<p>See some of my works below</p>
+<div class="center" >
+<table>
+    <caption>Portfolio</caption>
+    <tr>
+        <th>App I</th>
+        <th>App II</th>
+    </tr>
+    <tr>
+        <td> <img src="https://site-images.similarcdn.com/url?url=https%3A%2F%2Fis2-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple114%2Fv4%2F6a%2Fad%2F32%2F6aad3296-c97b-a81f-9fdf-5378719ce5f2%2FAppIcon-0-1x_U007emarketing-0-85-220-0-10.png%2F256x256bb-85.png&h=97ee181c42c56be33c1c14b6605ac4b08a0472cf1256cdeceb5858e470347b5f" ></td>
+        <td> <img src="https://ohsheglows.com/gs_images/2016/02/20160129-Vegan-enchiladas-with-cashew-cilantro-cream-sauce-blog-00791-256x256.jpg"> </td>
+    </tr>
+</table>
+</div>
+<footer>
+
+    <table>
+        <tr>
+        <td><strong><%= link_to 'Home', root_path %></strong></td>    
+        <td><strong><%= link_to 'About', about_path %></strong></td>
+            <td><strong>Contact</strong></td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>
